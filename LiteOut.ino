@@ -182,8 +182,8 @@ bool checkSquares() {
 
 void drawHome() {
   arduboy.setTextSize(2);
-  arduboy.setCursor(4, 24);
-  arduboy.print("LIGHTS/OUT");
+  arduboy.setCursor(16, 24);
+  arduboy.print("LITE/OUT");
   
   arduboy.setTextSize(1);
   arduboy.setCursor(16, 44);
