@@ -64,14 +64,14 @@ void drawBoard() {
   for (unsigned char x = 0; x < 5; x++) {
     for (unsigned char y = 0; y < 5; y++) {
       if (board[x][y]) {
-        arduboy.fillRect(x * 13 + 2, y * 13 + 2, 8, 8, WHITE);
+        arduboy.fillRoundRect(x * 13 + 2, y * 13 + 2, 8, 8, 2, WHITE);
       } else {
-        arduboy.drawRect(x * 13 + 2, y * 13 + 2, 8, 8, WHITE);
+        arduboy.drawRoundRect(x * 13 + 2, y * 13 + 2, 8, 8, 2, WHITE);
       }
     }
   }
   
-  arduboy.drawRect(sx * 13, sy * 13, 12, 12, WHITE);
+  arduboy.drawRoundRect(sx * 13, sy * 13, 12, 12, 3, WHITE);
 }
 
 void drawHud() {
